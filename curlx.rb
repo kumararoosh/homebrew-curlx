@@ -5,21 +5,21 @@
 class Curlx < Formula
   desc "A keyboard-driven TUI API client with OpenAPI spec support — Postman for the terminal."
   homepage "https://github.com/kumararoosh/curlx"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.0/curlx_darwin_amd64.tar.gz"
-      sha256 "03c56d0a0d37b4acb88b0192d8768ac43d85569dd8b17e5db94583e23dddf039"
+      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.1/curlx_darwin_amd64.tar.gz"
+      sha256 "249e9cb918b3312f20ef20cbc54c62ef0e711d82d950ddddfdeffac9a4fcad27"
 
       define_method(:install) do
         bin.install "curlx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.0/curlx_darwin_arm64.tar.gz"
-      sha256 "c8963abc219309b4ade9fc5ee9079710a9d9f8112242564548c3623acfb52b48"
+      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.1/curlx_darwin_arm64.tar.gz"
+      sha256 "12f430662f5a524411ff61793a3fdbafd5448d6a7e82a23e16def586a9aaf920"
 
       define_method(:install) do
         bin.install "curlx"
@@ -29,15 +29,15 @@ class Curlx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.0/curlx_linux_amd64.tar.gz"
-      sha256 "f355da6866e95eba0bd54b3b72329944a38819a6147315cebada7f1b05b3cab1"
+      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.1/curlx_linux_amd64.tar.gz"
+      sha256 "77b1a23e9d9628fbf64ce48a5e395ceb5784f9af2f1ca8b66127fa3b7f5bed15"
       define_method(:install) do
         bin.install "curlx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.0/curlx_linux_arm64.tar.gz"
-      sha256 "494522d21014eae6f7563004a20736205924a47c17545fec269e6712c7740abb"
+      url "https://github.com/kumararoosh/curlx/releases/download/v0.1.1/curlx_linux_arm64.tar.gz"
+      sha256 "c3546198d9fccd385bc2d94be9939008bafae074f6c5948761ae085490f64fe3"
       define_method(:install) do
         bin.install "curlx"
       end
